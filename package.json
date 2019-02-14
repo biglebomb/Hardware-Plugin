@@ -1,0 +1,41 @@
+{
+  "name": "ubequ-cordova-hardware-plugin",
+  "version": "0.0.1-dev",
+  "description": "A cordova plugin for hardware interaction.",
+  "cordova": {
+    "id": "ubequ-cordova-hardware-plugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irfanabyan/cordova-pos-hardware-plugin.git"
+  },
+  "keywords": [
+    "cordova",
+    "bluetooth",
+    "printer",
+    "pos",
+    "text",
+    "barcode",
+    "image",
+    "base64",
+    "qrcode",
+    "ecosystem:cordova",
+    "cordova-android",
+    "ubequ"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Ubequ",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://bitbucket.org/ubequdev/hardware-plugin/issues"
+  },
+  "homepage": "ubequpos.com"
+}
