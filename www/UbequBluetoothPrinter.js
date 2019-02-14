@@ -2,7 +2,7 @@ var exec = require('cordova/exec');
 
 var UbequBTPrinter = {
     list: function (fnSuccess, fnError) {
-        exec(fnSuccess, fnError, "UbequBTPrinter", "list", []);
+        exec(fnSuccess, fnError, "UbequBluetoothPrinter", "list", []);
     },
     connect: function (fnSuccess, fnError, name) {
         exec(fnSuccess, fnError, "UbequBluetoothPrinter", "connect", [name]);
