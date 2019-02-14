@@ -32,6 +32,9 @@ import android.graphics.Bitmap.Config;
 import android.util.Xml.Encoding;
 import android.util.Base64;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class UbequBTPrinter extends CordovaPlugin {
 	private static final String LOG_TAG = "BluetoothPrinter";
 	BluetoothAdapter mBluetoothAdapter;
