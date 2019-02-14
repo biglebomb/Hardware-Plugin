@@ -34,7 +34,7 @@
          <uses-permission android:name="android.permission.BLUETOOTH" />
       </config-file>
 
-      <source-file src="src/android/UbequBTPrinter.java" target-dir="src/br/com/cordova/printer/bluetooth" />
+      <source-file src="src/android/UbequBTPrinter.java" target-dir="src/com/ubequpos/printer/bluetooth" />
 
    </platform>
 </plugin>
