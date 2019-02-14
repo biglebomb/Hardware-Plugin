@@ -472,40 +472,6 @@ public class UbequBTPrinter extends CordovaPlugin {
         return bytes;
     }
 
-    private static byte charToByte(char c) {
-		return (byte) "0123456789abcdef".indexOf(c);
-	}
-
-	public byte[] getImage(Bitmap bitmap) {
-        // TODO Auto-generated method stub
-        int mWidth = bitmap.getWidth();
-        int mHeight = bitmap.getHeight();
-        bitmap=resizeImage(bitmap, 48 * 8, mHeight);
-        //bitmap=resizeImage(bitmap, imageWidth * 8, mHeight);
-        /*
-        mWidth = bitmap.getWidth();
-        mHeight = bitmap.getHeight();
-        int[] mIntArray = new int[mWidth * mHeight];
-        bitmap.getPixels(mIntArray, 0, mWidth, 0, 0, mWidth, mHeight);
-        byte[]  bt =getBitmapData(mIntArray, mWidth, mHeight);*/
-
-        byte[]  bt =getBitmapData(bitmap);
-
-
-        /*try {//?????????????????
-            createFile("/sdcard/demo.txt",bt);
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }*/
-
-
-        ////byte[]  bt =StartBmpToPrintCode(bitmap);
-
-        bitmap.recycle();
-        return bt;
-    }
-
     public static byte[] getBitmapData(Bitmap bitmap) {
 		byte temp = 0;
 		int j = 7;
