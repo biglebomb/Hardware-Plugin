@@ -341,10 +341,12 @@ public class UbequBluetoothPrinter extends CordovaPlugin {
                      case 1:
                          mmOutputStream.write(ESC_ALIGN_CENTER);
                          mmOutputStream.write(bt);
+                         mmOutputStream.write(ESC_ALIGN_LEFT);
                          break;
                      case 2:
                          mmOutputStream.write(ESC_ALIGN_RIGHT);
                          mmOutputStream.write(bt);
+                         mmOutputStream.write(ESC_ALIGN_LEFT);
                          break;
                  }
                  // tell the user data were sent
