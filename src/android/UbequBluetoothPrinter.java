@@ -169,14 +169,16 @@ public class UbequBluetoothPrinter extends CordovaPlugin {
 			if (pairedDevices.size() > 0) {
 				JSONArray json = new JSONArray();
 				for (BluetoothDevice device : pairedDevices) {
-					/*
+//					/*
 					Hashtable map = new Hashtable();
 					map.put("type", device.getType());
 					map.put("address", device.getAddress());
 					map.put("name", device.getName());
+					map.put("class", device.getBluetoothClass());
 					JSONObject jObj = new JSONObject(map);
-					*/
-					json.put(device.getName());
+//					*/
+//					json.put(device.getName());
+					json.put(jObj);
 				}
 				callbackContext.success(json);
 			} else {
