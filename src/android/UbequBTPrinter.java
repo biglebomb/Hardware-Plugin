@@ -449,7 +449,6 @@ public class UbequBTPrinter extends CordovaPlugin {
 		return false;
 	}
 
-
 	public byte[] getText(String textStr) {
         // TODO Auto-generated method stubbyte[] send;
         byte[] send=null;
@@ -459,17 +458,6 @@ public class UbequBTPrinter extends CordovaPlugin {
             send = textStr.getBytes();
         }
         return send;
-    }
-
-    public static byte[] hexStringToBytes(String hexString) {
-        hexString = hexString.toLowerCase();
-        String[] hexStrings = hexString.split(" ");
-        byte[] bytes = new byte[hexStrings.length];
-        for (int i = 0; i < hexStrings.length; i++) {
-            char[] hexChars = hexStrings[i].toCharArray();
-            bytes[i] = (byte) (charToByte(hexChars[0]) << 4 | charToByte(hexChars[1]));
-        }
-        return bytes;
     }
 
     public static byte[] getBitmapData(Bitmap bitmap) {
