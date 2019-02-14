@@ -1,16 +1,16 @@
 {
-  "name": "ubequ-cordova-hardware-plugin",
+  "name": "cordova-plugin-ubequ-hardware-plugin",
   "version": "0.0.1-dev",
   "description": "A cordova plugin for hardware interaction.",
   "cordova": {
-    "id": "ubequ-cordova-hardware-plugin",
+    "id": "cordova-plugin-ubequ-hardware-plugin",
     "platforms": [
       "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/srehanuddin/Cordova-Plugin-Bluetooth-Printer.git"
+    "url": "git+https://github.com/irfanabyan/Hardware-Plugin.git"
   },
   "keywords": [
     "cordova",
