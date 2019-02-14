@@ -7,7 +7,7 @@
    <name>Ubequ hardware plugin</name>
    <description>A cordova plugin for hardware interaction.</description>
 
-   <repo>https://bitbucket.org/ubequdev/ubequ-hardware-plugin</repo>
+   <repo>https://github.com/irfanabyan/Hardware-Plugin</repo>
    <license>Apache 2.0</license>
    <keywords>cordova, bluetooth, printer, pos, text, barcode, image, base64, qrcode</keywords>
 
