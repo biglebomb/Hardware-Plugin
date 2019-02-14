@@ -506,30 +506,6 @@ public class UbequBTPrinter extends CordovaPlugin {
         return bt;
     }
 
-    private static Bitmap resizeImage(Bitmap bitmap, int w, int h) {
-        Bitmap BitmapOrg = bitmap;
-        int width = BitmapOrg.getWidth();
-        int height = BitmapOrg.getHeight();
-
-        if(width>w)
-        {
-            float scaleWidth = ((float) w) / width;
-            float scaleHeight = ((float) h) / height+24;
-            Matrix matrix = new Matrix();
-            matrix.postScale(scaleWidth, scaleWidth);
-            Bitmap resizedBitmap = Bitmap.createBitmap(BitmapOrg, 0, 0, width,
-                    height, matrix, true);
-            return resizedBitmap;
-        }else{
-            Bitmap resizedBitmap = Bitmap.createBitmap(w, height+24, Config.RGB_565);
-            Canvas canvas = new Canvas(resizedBitmap);
-            Paint paint = new Paint();
-            canvas.drawColor(Color.WHITE);
-            canvas.drawBitmap(bitmap, (w-width)/2, 0, paint);
-            return resizedBitmap;
-        }
-    }
-
     public static byte[] getBitmapData(Bitmap bitmap) {
 		byte temp = 0;
 		int j = 7;
